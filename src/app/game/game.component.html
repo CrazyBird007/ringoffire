@@ -8,15 +8,15 @@
     <div class="card-stack">
         <!-- card stack -->
         <img [ngStyle]="{'right.px': i * 5}" *ngFor="let schleifchen of ['a',2,'h',4,4]; let i = index;"
-            src="../../assets/img/cards/card_cover.png" alt="">
-        <img (click)="pickCard()" class="top-card" style="right: 25px;" src="../../assets/img/cards/card_cover.png"
+            src="./assets/img/cards/card_cover.png" alt="">
+        <img (click)="pickCard()" class="top-card" style="right: 25px;" src="./assets/img/cards/card_cover.png"
             alt="">
         <!-- stack for played cards -->
-        <img class="played-card" *ngFor="let card of game.playedCard" src="../../assets/img/cards/{{ card }}.png"
+        <img class="played-card" *ngFor="let card of game.playedCard" src="./assets/img/cards/{{ card }}.png"
             alt="">
         <!-- current card (animation) -->
         <img (click)="pickCard()" *ngIf="pickCardAnimation" class="pick-card" style="right: 25px;"
-            src="../../assets/img/cards/{{ currentCard }}.png" alt="">
+            src="./assets/img/cards/{{ currentCard }}.png" alt="">
     </div>
 </div>
 
